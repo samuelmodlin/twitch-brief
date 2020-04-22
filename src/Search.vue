@@ -8,7 +8,13 @@
   <br>
   <b-container fluid>
     <b-input-group size="lg">
-      <b-form-input size="lg" autofocus v-model="searchText" type="search" @keyup.enter="search"></b-form-input>
+      <b-form-input 
+        size="lg" 
+        autofocus v-model="searchText" 
+        type="search" 
+        @keyup.enter="search"
+        placeholder="Enter twitch name..."
+      ></b-form-input>
         <b-input-group-append>
             <b-button v-on:click="search" block variant="primary">Search</b-button>
         </b-input-group-append>
