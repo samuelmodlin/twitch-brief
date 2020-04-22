@@ -77,8 +77,7 @@ export default {
         this.user = profile;
         }).catch((error) => {
           console.warn(error);
-        }).then(() => {this.loadingAnimation = false
-        }
+        }).then(() => {this.loadingAnimation = false}
       );
     }
   }
